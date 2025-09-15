@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>  
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
@@ -24,106 +24,117 @@
   <body class="bg-white">
     <main>
       <!-- Navbar -->
-      <nav class="flex items-center justify-between px-6 lg:px-12 py-6 border-b">
-        <!-- Left Side -->
-        <div class="flex items-center gap-6">
-          <a href="#" class="text-lg md:text-2xl font-bold border border-solid border-red-700 rounded px-2 py-1">All Categories</a>
+<nav class="flex flex-col md:flex-row items-center justify-between px-6 lg:px-12 py-6 border-b">
+  <!-- Left Side -->
+  <div class="flex items-center justify-center md:justify-start gap-6 w-full md:w-auto">
+    <a href="#" class="text-lg md:text-2xl font-bold border border-solid border-red-700 rounded px-2 py-1">
+      All Categories
+    </a>
 
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden flex items-center">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden flex items-center">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 
-          <!-- Navbar Links -->
-          <div class="hidden md:flex gap-6 text-lg">
-            <a href="#" class="text-blue-600">Home</a>
-            <a href="#" class="hover:text-blue-500">Shop</a>
-            <a href="#" class="hover:text-blue-500">Pages</a>
-            <a href="#" class="hover:text-blue-500">Product</a>
-            <span class="text-gray-500 cursor-not-allowed">About</span>
-          </div>
-        </div>
+  <!-- Navbar Links -->
+  <div class="flex flex-col md:flex-row gap-4 md:gap-6 text-lg items-center justify-center mt-4 md:mt-0">
+    <a href="#" class="text-blue-600">Home</a>
+    <a href="#" class="hover:text-blue-500">Shop</a>
+    <a href="#" class="hover:text-blue-500">Pages</a>
+    <a href="#" class="hover:text-blue-500">Product</a>
+    <span class="text-gray-500 cursor-not-allowed">About</span>
+  </div>
 
-        <!-- Right Side: Contact -->
-        <div class="hidden md:block text-gray-900 text-lg">
-          Contact: (000) 555-0111
-        </div>
-      </nav>
+  <!-- Right Side: Contact -->
+  <div class="text-gray-900 text-lg mt-4 md:mt-0">
+    Contact: (000) 555-0111
+  </div>
+</nav>
+
     </main>
 
     <!-- Hero Section -->
-    <section class="bg-gray-50">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        
-        <!-- Left Content -->
-        <div class="space-y-6 text-center lg:text-left">
-          <p class="text-sm uppercase tracking-widest text-gray-500">Welcome to Chairy</p>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-            Best Furniture <br /> Collection For Your <br /> Interior.
-          </h1>
-          <a href="#"
-             class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded-md transition">
-            Shop Now 
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
+   <section class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    
+    <!-- Left Content -->
+    <div class="space-y-6 text-center lg:text-left">
+      <p class="text-sm uppercase tracking-widest text-gray-500">Welcome to Chairy</p>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+        Best Furniture <br /> Collection For Your <br /> Interior.
+      </h1>
+      <a href="#"
+         class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded-md transition">
+        Shop Now 
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
 
-        <!-- Right Content -->
-        <div class="relative flex justify-center">
-          <!-- Circle Background -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-56 h-56 sm:w-72 sm:h-72 bg-gray-200 rounded-full"></div>
-          </div>
-
-          <!-- Product Image -->
-          <img src="img/Product Image.png" alt="Chair"
-               class="relative z-10 w-48 sm:w-60 lg:w-80 top-8 object-contain">
-
-          <!-- Discount Badge -->
-          <div class="absolute top-8 right-8 bg-white shadow-lg px-4 py-2 rounded-full border text-center">
-            <span class="block text-lg sm:text-xl font-bold text-red-500">54%</span>
-            <span class="text-gray-600 text-sm">Discount</span>
-          </div>
-        </div>
+    <!-- Right Content -->
+    <div class="relative flex justify-center">
+      <!-- Circle Background -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-72 h-72 sm:w-96 sm:h-96 bg-gray-200 rounded-full"></div>
       </div>
-    </section>                                        <!------End-->
 
-    <!-- Feature Cards -->
-    <section class="bg-white py-12">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- Card 1 -->
-        <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <img src="img/box.png" alt="Discount" class="w-16 h-16 mb-4">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Discount</h4>
-          <p class="text-gray-500 text-sm text-center">Every week new sales</p>
-        </div>
+      <!-- Product Image -->
+      <img src="img/Product Image.png" alt="Chair"
+           class="relative z-10 w-48 sm:w-60 lg:w-72 object-contain">
 
-        <!-- Card 2 -->
-        <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <img src="img/shield.png" alt="Free Delivery" class="w-16 h-16 mb-4">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Free Delivery</h4>
-          <p class="text-gray-500 text-sm text-center">100% Free for all orders</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <img src="img/Logo Icon.png" alt="Support" class="w-16 h-16 mb-4">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Great Support 24/7</h4>
-          <p class="text-gray-500 text-sm text-center">We cover your experiences</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <img src="img/box.png" alt="Secure Payment" class="w-16 h-16 mb-4">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Secure Payment</h4>
-          <p class="text-gray-500 text-sm text-center">100% Secure Payment Method</p>
-        </div>
+      <!-- Discount Badge -->
+      <div class="absolute top-6 right-6 sm:top-10 sm:right-10 z-20 bg-white shadow-lg px-4 py-2 rounded-full border text-center">
+        <span class="block text-lg sm:text-xl font-bold text-red-500">54%</span>
+        <span class="text-gray-600 text-sm">Discount</span>
       </div>
-    </section>                                    <!------End-->
+    </div>
+
+  </div>
+</section>                <!------End-->
+
+   <!-- Feature Cards -->
+<section class="bg-white py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    
+    <!-- Card 1 -->
+    <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md 
+                hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+      <img src="img/box.png" alt="Discount" class="w-16 h-16 mb-4">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Discount</h4>
+      <p class="text-gray-500 text-sm text-center">Every week new sales</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md 
+                hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+      <img src="img/shield.png" alt="Free Delivery" class="w-16 h-16 mb-4">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Free Delivery</h4>
+      <p class="text-gray-500 text-sm text-center">100% Free for all orders</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md 
+                hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+      <img src="img/Logo Icon.png" alt="Support" class="w-16 h-16 mb-4">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Great Support 24/7</h4>
+      <p class="text-gray-500 text-sm text-center">We cover your experiences</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flex flex-col items-center bg-gray-50 p-6 rounded-2xl shadow-md 
+                hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+      <img src="img/box.png" alt="Secure Payment" class="w-16 h-16 mb-4">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Secure Payment</h4>
+      <p class="text-gray-500 text-sm text-center">100% Secure Payment Method</p>
+    </div>
+  </div>
+</section>
+             <!------End-->
 
     <!-- Brand Logos -->
     <section class="bg-white py-10">
@@ -143,30 +154,31 @@
       <div class="flex items-center justify-between mb-6">
         <h3 class="text-xl md:text-2xl font-bold">Featured Products</h3>
         <div class="flex items-center gap-2">
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
+
       </div>
 
       <!-- Product Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <!-- Card -->
         <div class="bg-white shadow-md rounded-2xl overflow-hidden p-3 hover:shadow-xl transition">
-          <img src="img/Image-9.png" alt="Product 1" class="w-full h-48 object-cover rounded-xl">
+          <img src="img/Image-9.png" alt="Product 1" class="w-full  h-48 object-cover rounded-xl">
           <div class="flex items-center justify-between mt-4">
             <div>
-              <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
+              <p class="text-lg text-[#262828 font-medium hover:text-[#029FAE]">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -177,10 +189,10 @@
           <img src="img/Image-10.png" alt="Product 2" class="w-full h-48 object-cover rounded-xl">
           <div class="flex items-center justify-between mt-4">
             <div>
-              <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
+              <p class="text-lg text-[#262828 font-medium hover:text-[#029FAE]">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -190,10 +202,10 @@
           <img src="img/Image-11.png" alt="Product 3" class="w-full h-48 object-cover rounded-xl">
           <div class="flex items-center justify-between mt-4">
             <div>
-              <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
+              <p class="text-lg text-[#262828 font-medium hover:text-[#029FAE]">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -203,26 +215,25 @@
           <img src="img/Image-12.png" alt="Product 4" class="w-full h-48 object-cover rounded-xl">
           <div class="flex items-center justify-between mt-4">
             <div>
-              <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
+              <p class="text-lg text-[#262828] font-medium hover:text-[#029FAE]">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>                                  <!----- End-->
-    
-      <section class="px-20 py-10">
+    <section class="px-6 sm:px-10 lg:px-20 py-10">
   <!-- Title + Arrow -->
-  <div class="flex items-center justify-between mb-4">
-    <h2 class="text-2xl font-bold">Top Categories</h2>
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Top Categories</h2>
     <div class="flex items-center gap-2">
-      <button class="bg-gray-200 hover:bg-red-300 p-2 rounded-full">
+      <button class="bg-gray-200 hover:bg-[#0096C7] p-2 rounded-full text-white transition">
         ←
       </button>
-      <button class="bg-gray-200 hover:bg-red-300 p-2 rounded-full">
+      <button class="bg-gray-200 hover:bg-[#0096C7] p-2 rounded-full text-white transition">
         →
       </button>
     </div>
@@ -231,72 +242,79 @@
   <!-- Scrollable Cards -->
   <div class="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide">
     <!-- Card 1 -->
-    <div class="min-w-[220px] bg-[#7f7b7b] rounded-xl shadow-md overflow-hidden">
+    <div class="min-w-[220px] bg-[#000000] rounded-xl shadow-lg overflow-hidden 
+                hover:shadow-2xl hover:scale-105 transition-transform duration-300">
       <img src="img/Image-7.png" class="w-full h-44 object-cover" alt="">
       <div class="p-3 text-white">
         <h4 class="font-semibold text-lg">Wing Chair</h4>
-        <p class=" text-sm">3,584 Products</p>
+        <p class="text-sm">3,584 Products</p>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="min-w-[220px] bg-[#7f7b7b] rounded-xl shadow-md overflow-hidden">
+    <div class="min-w-[220px] bg-[#000000] rounded-xl shadow-lg overflow-hidden 
+                hover:shadow-2xl hover:scale-105 transition-transform duration-300">
       <img src="img/Image-5.png" class="w-full h-44 object-cover" alt="">
       <div class="p-3 text-white">
         <h4 class="font-semibold text-lg">Wooden Chair</h4>
-        <p class=" text-sm">157 Products</p>
+        <p class="text-sm">157 Products</p>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="min-w-[220px] bg-[#7f7b7b] rounded-xl shadow-md overflow-hidden">
+    <div class="min-w-[220px] bg-[#000000] rounded-xl shadow-lg overflow-hidden 
+                hover:shadow-2xl hover:scale-105 transition-transform duration-300">
       <img src="img/Image-7.png" class="w-full h-44 object-cover" alt="">
       <div class="p-3 text-white">
         <h4 class="font-semibold text-lg">Desk Chair</h4>
-        <p class=" text-sm">154 Products</p>
+        <p class="text-sm">154 Products</p>
       </div>
     </div>
 
     <!-- Card 4 -->
-    <div class="min-w-[220px]  bg-[#7f7b7b] rounded-xl shadow-md overflow-hidden">
+    <div class="min-w-[220px] bg-[#000000] rounded-xl shadow-lg overflow-hidden 
+                hover:shadow-2xl hover:scale-105 transition-transform duration-300">
       <img src="img/Image-8.png" class="w-full h-44 object-cover" alt="">
       <div class="p-3 text-white">
         <h4 class="font-semibold text-lg">Park Bench</h4>
-        <p class="text-white-500 text-sm">154 Products</p>
+        <p class="text-sm">154 Products</p>
       </div>
     </div>
 
-    <!-- More cards -->
-    <div class="min-w-[220px] bg-[#7f7b7b] rounded-xl shadow-md overflow-hidden">
+    <!-- Card 5 -->
+    <div class="min-w-[220px] bg-[#000000] rounded-xl shadow-lg overflow-hidden 
+                hover:shadow-2xl hover:scale-105 transition-transform duration-300">
       <img src="img/Image-10.png" class="w-full h-44 object-cover" alt="">
       <div class="p-3 text-white">
         <h4 class="font-semibold text-lg">Garden Sofa</h4>
-        <p class="text-white-500 text-sm">80 Products</p>
+        <p class="text-sm">80 Products</p>
       </div>
     </div>
   </div>
-</section>              <!------End-->
+</section>
 
-<!-- Hide scrollbar (Tailwind utility) -->
+<!-- Hide scrollbar -->
 <style>
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
   .scrollbar-hide {
-    -ms-overflow-style: none;  
+    -ms-overflow-style: none;
     scrollbar-width: none;
   }
 </style>
+
+      
       
 <section class="bg-white py-10 text-center">
   <div>
     <h3 class="text-2xl font-bold mb-6">Our Products</h3>
     <div class="flex justify-center gap-6">
-      <p class="cursor-pointer hover:text-red-300">All</p>
-      <p class="cursor-pointer hover:text-red-300">Newest</p>
-      <p class="cursor-pointer hover:text-red-300">Trending</p>
-      <p class="cursor-pointer hover:text-red-300">Best Sellers</p>
-      <p class="cursor-pointer hover:text-red-300">Featured</p>
+      <p class="cursor-pointer hover:text-[#06bfd0]">All</p>
+      <p class="cursor-pointer hover:text-[#06bfd0]">Newest</p>
+      <p class="cursor-pointer hover:text-[#06bfd0]">Trending</p>
+      <p class="cursor-pointer hover:text-[#06bfd0]">Best Sellers</p>
+      <p class="cursor-pointer hover:text-[#06bfd0]">Featured</p>
     </div>
   </div>
 </section> <!---End-->
@@ -311,21 +329,21 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
         </div>
 
         <!-- Repeat 3 More Cards -->
-        <div class="bg-white shadow-md rounded-2xl overflow-hidden p-3 hover:shadow-xl transition">
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden p-3  hover:shadow-xl transition">
           <img src="img/Image-10.png" alt="Product 2" class="w-full h-48 object-cover rounded-xl">
           <div class="flex items-center justify-between mt-4">
             <div>
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -338,7 +356,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -351,14 +369,14 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
         </div>
       </div> <!---- card one -->
       <!-- Product Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  p-3 gap-6">
         <!-- Card -->
         <div class="bg-white shadow-md rounded-2xl overflow-hidden p-3 hover:shadow-xl transition">
           <img src="img/Image-2.png" alt="Product 1" class="w-full h-48 object-cover rounded-xl">
@@ -367,7 +385,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -381,7 +399,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -394,7 +412,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -407,7 +425,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -420,12 +438,12 @@
     <div class="flex items-center justify-between mb-6">
         <h3 class="text-xl md:text-2xl font-bold">What client says about us</h3>
         <div class="flex items-center gap-2">
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -438,11 +456,12 @@
     
     <!-- Testimonial 1 -->
     <div class="bg-white p-6 rounded-lg shadow-md flex-1">
-      <p class="mb-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+      <p class="mb-4">“ Hi,
+I was thinking about redecorating my room, and I realized how important furniture is in making a home cozy and stylish. A comfortable chair, a nice desk, and a few shelves can completely change the feel of a room. Maybe we can go shopping together sometime and pick some beautiful pieces for our rooms. I know you have a great taste, and your ideas would make everything look amazing!“</p>
       <div class="flex items-center gap-4 mt-4">
         <img src="img/Image-1.png" alt="" class="w-12 h-12 rounded-full">
         <div>
-          <h5 class="font-bold">Oliva</h5>
+          <h5 class="font-bold">Papiya</h5>
           <p class="text-sm text-gray-500">Fashion Designer</p>
         </div>
       </div>
@@ -450,9 +469,11 @@
 
     <!-- Testimonial 2 -->
     <div class="bg-white p-6 rounded-lg shadow-md flex-1">
-      <p class="mb-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+      <p class="mb-4">“Hi,
+
+I was thinking about redecorating my room, and I realized how important furniture is in making a home cozy and stylish. A comfortable chair, a nice desk, and a few shelves can completely change the feel of a room. Maybe we can go shopping together sometime and pick some beautiful pieces for our rooms. I know you have a great taste, and your ideas would make everything look amazing!“</p>
       <div class="flex items-center gap-4 mt-4">
-        <img src="img/Image-1.png" alt="" class="w-12 h-12 rounded-full">
+        <img src="img/Image.png" alt="" class="w-12 h-12 rounded-full">
         <div>
           <h5 class="font-bold">Oliva</h5>
           <p class="text-sm text-gray-500">Fashion Designer</p>
@@ -463,17 +484,17 @@
   </div>
 </section> <!---End -->
 
-<section class="px-6 lg:px-10 py-8">   
+<section class="px-6 lg:px-10 py-8">
       <!-- Top section: Title + Arrow button -->
       <div class="flex items-center justify-between mb-6">
         <h3 class="text-xl md:text-2xl font-bold">Featured Products</h3>
         <div class="flex items-center gap-2">
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <button class="p-2 bg-gray-200 rounded-full hover:bg-red-300 transition">
+          <button class="p-2 bg-gray-200 rounded-full hover:bg-[#029FAE] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -491,7 +512,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -505,7 +526,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -518,7 +539,7 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
@@ -531,100 +552,93 @@
               <p class="text-lg text-[#06bfd0] font-medium">Library Stool Chair</p>
               <h5 class="font-bold text-gray-800">$200</h5>
             </div>
-            <div class="bg-[#029FAE] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
+            <div class="bg-[#887A78] p-2 rounded-xl cursor-pointer hover:bg-[#06bfd0] transition">
               <img src="img/Group-3.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </section> <!---End-->     
-    <footer>
-      <!-- Footer -->
-  <footer class="bg-white border-t border-gray-200">
-    <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-
-      <!-- Logo & About -->
-      <div>
-        <div class="flex items-center gap-2">
-          <div class="w-10 h-10 bg-teal-500 rounded flex items-center justify-center">
-            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M4 12C4 9 6 6 9 6h6c3 0 5 3 5 6s-2 6-5 6H9c-3 0-5-3-5-6z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800">Comforty</h3>
+                          <!-- Footer -->
+                           <footer class="bg-white border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-center">
+    <!-- Logo & About -->
+    <div class="flex flex-col items-center">
+      <div class="flex items-center gap-2 justify-center">
+        <div class="w-10 h-10 bg-teal-500 rounded flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4 12C4 9 6 6 9 6h6c3 0 5 3 5 6s-2 6-5 6H9c-3 0-5-3-5-6z"/>
+          </svg>
         </div>
-        <p class="mt-4 text-sm text-gray-500">
-          Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum.
-          Cras egestas purus.
-        </p>
-        <div class="mt-4 flex gap-3">
-          <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+        <h3 class="text-xl font-semibold text-gray-800">Comforty</h3>
       </div>
-
-      <!-- Category -->
-      <div>
-        <h4 class="text-sm font-semibold text-gray-700 uppercase">Category</h4>
-        <ul class="mt-4 space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-teal-600">Sofa</a></li>
-          <li><a href="#" class="hover:text-teal-600">Armchair</a></li>
-          <li><a href="#" class="hover:text-teal-600">Wing Chair</a></li>
-          <li><a href="#" class="hover:text-teal-600">Desk Chair</a></li>
-          <li><a href="#" class="hover:text-teal-600">Wooden Chair</a></li>
-          <li><a href="#" class="hover:text-teal-600">Park Bench</a></li>
-        </ul>
-      </div>
-
-      <!-- Support -->
-      <div>
-        <h4 class="text-sm font-semibold text-gray-700 uppercase">Support</h4>
-        <ul class="mt-4 space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-teal-600">Help & Support</a></li>
-          <li><a href="#" class="hover:text-teal-600">Terms & Conditions</a></li>
-          <li><a href="#" class="hover:text-teal-600">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-teal-600">Help</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div>
-        <h4 class="text-sm font-semibold text-gray-700 uppercase">Newsletter</h4>
-        <p class="mt-3 text-sm text-gray-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <form class="mt-4 flex gap-2">
-          <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-teal-300 focus:outline-none">
-          <button class="px-4 py-2 bg-teal-500 text-white rounded hover:bg-teal-600">Subscribe</button>
-        </form>
-        <div class="mt-6 flex gap-2 text-gray-400 text-xs">
-          <span class="px-2 py-1 border border-gray-300 rounded">PayPal</span>
-          <span class="px-2 py-1 border border-gray-300 rounded">MasterCard</span>
-          <span class="px-2 py-1 border border-gray-300 rounded">VISA</span>
-        </div>
+      <p class="mt-4 text-sm text-gray-500 max-w-xs">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus.</p>
+      <div class="mt-4 flex gap-3 justify-center">
+        <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-teal-500 hover:text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
 
-    <!-- Bottom -->
-    <div class="border-t border-gray-200 py-4">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
-        <p>© <span id="year"></span> - Blogy — Designed & Developed by Zakirsoft</p>
-        <div class="flex gap-4 mt-2 md:mt-0">
-          <a href="#" class="hover:text-teal-600">Privacy</a>
-          <a href="#" class="hover:text-teal-600">Terms</a>
-          <a href="#" class="hover:text-teal-600">Contact</a>
-        </div>
+    <!-- Category -->
+    <div>
+      <h4 class="text-sm font-semibold text-gray-700 uppercase">Category</h4>
+      <ul class="mt-4 space-y-2 text-gray-600 text-center md:text-center">
+        <li><a href="#" class="hover:text-teal-600">Sofa</a></li>
+        <li><a href="#" class="hover:text-teal-600">Armchair</a></li>
+        <li><a href="#" class="hover:text-teal-600">Wing Chair</a></li>
+        <li><a href="#" class="hover:text-teal-600">Desk Chair</a></li>
+        <li><a href="#" class="hover:text-teal-600">Wooden Chair</a></li>
+        <li><a href="#" class="hover:text-teal-600">Park Bench</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h4 class="text-sm font-semibold text-gray-700 uppercase">Support</h4>
+      <ul class="mt-4 space-y-2 text-gray-600 text-center md:text-center">
+        <li><a href="#" class="hover:text-teal-600">Help & Support</a></li>
+        <li><a href="#" class="hover:text-teal-600">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-teal-600">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="flex flex-col items-center">
+      <h4 class="text-sm font-semibold text-gray-700 uppercase">Newsletter</h4>
+      <p class="mt-3 text-sm text-gray-500 text-center max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <form class="mt-4 flex flex-col sm:flex-row gap-2 w-full justify-center">
+        <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-teal-300 focus:outline-none">
+        <button class="px-4 py-2 bg-teal-500 text-white rounded hover:bg-teal-600">Subscribe</button>
+      </form>
+      <div class="mt-6 flex flex-wrap gap-2 justify-center text-gray-400 text-xs">
+        <span class="px-2 py-1 border border-gray-300 rounded">PayPal</span>
+        <span class="px-2 py-1 border border-gray-300 rounded">MasterCard</span>
+        <span class="px-2 py-1 border border-gray-300 rounded">VISA</span>
       </div>
     </div>
-  </footer>
+  </div>
 
-    </footer>    
-       </body>
+  <!-- Bottom -->
+  <div class="border-t border-gray-200 py-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center justify-center gap-4 text-sm text-gray-500 text-center">
+      <p>© <span id="year"></span> - Blogy — Designed & Developed by Zakirsoft</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-teal-600">Privacy</a>
+        <a href="#" class="hover:text-teal-600">Terms</a>
+        <a href="#" class="hover:text-teal-600">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+ <div>
+    </div> 
+</body>
 </html>
